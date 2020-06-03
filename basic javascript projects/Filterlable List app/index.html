@@ -1,0 +1,110 @@
+<DOCTYPE!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HOOKS</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="center-align">Start Searching Now....</h1>
+			<input id="hell" type="text">
+			<ul id="names" class="collecation with-header">
+				
+				<li class="collection-header">
+					<h4>C</h4>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">cecile</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">cemnetry</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">cell</a>
+				</li>
+                <!--second------------>
+				<li class="collection-header">
+					<h4>X</h4>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">xmall</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">xmmskk</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">xtel</a>
+				</li>
+                <!--second------------>
+				<li class="collection-header">
+					<h4>Z</h4>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">zexel</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">zemetry</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">zexellls</a>
+				</li>
+				
+                <!--third-->
+				<li class="collection-header">
+					<h4>M</h4>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">Mohamed</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">Mahmoud</a>
+				</li>
+
+				<li class="collecation-item">
+					<a href="#">Moaz</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			let getE = document.getElementById('hell');
+
+			hell.addEventListener('keyup',get_them);
+
+			function get_them (){
+				let getFV = document.getElementById('hell').value.toUpperCase();
+                let ul = document.getElementById('names');
+                let getI = ul.querySelectorAll('li.collecation-item');
+
+                //loop through
+
+                for (let i=0; i < getI.length; i++) {
+                	let a = getI[i].getElementsByTagName('a')[0];
+                	if(a.innerHTML.toUpperCase().indexOf(getFV)> -1)
+                	{
+                		getI[i].style.display = '';
+
+                	}else 
+                	{
+                		getI[i].style.display = 'none';
+                	}
+
+                }
+			}
+		</script>
+
+	</body>
+</html>

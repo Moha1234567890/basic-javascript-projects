@@ -1,0 +1,16 @@
+/*
+h1
+{
+	color:red;
+	text-align: center;
+}
+*/
+body {
+	margin:0;
+}
+img
+{
+    width: 1150px;
+    height: 768px;
+	background-size: cover;
+}

@@ -1,0 +1,37 @@
+/*
+h1
+{
+	color:red;
+	text-align: center;
+}
+*/
+
+
+body
+{
+	background-color: #222;
+}
+
+
+.fuck img
+{
+    width: 190px;
+    height: 180px;
+    margin: 7px;
+}
+
+.fuck
+{
+	padding: 20px;
+}
+
+.fuck img:hover
+{
+	border:2px solid #DDD;
+	cursor:pointer;
+}
+.placholder img
+{
+	width: 1127px;
+    height: 892px;
+}

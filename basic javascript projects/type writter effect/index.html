@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>type writter</title>
+
+	</head>
+	<body>
+		<p id='type'></p>
+
+
+
+
+		<script>
+			  
+             var    texrContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis unde illo, magni fugit consequuntur quibusdam tempore libero aliquam sed fugiat harum dolores cum ducimus, mollitia cumque, qui laudantium aspernatur amet.',
+            
+             i=0;
+           
+	            window.onload = function () {
+
+	         
+		         'use strict';
+		         
+				         	var theSetInterval = setInterval (function (){
+				             
+				             document.getElementById('type').textContent += texrContent[i];
+				             i +=1;
+				             
+				             if (i > texrContent.length -1 ){
+				                 
+				                 //clean time interval
+				                 clearInterval(theSetInterval);
+				             };
+				             
+				           //Time interval Between characters  
+				         },100);
+				         
+				     };
+
+		     
+	         
+		</script>
+	</body>
+
+</html>
